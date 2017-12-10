@@ -1,0 +1,40 @@
+{
+  "name": "alh101",
+  "author": "Aleh Dzenisiuk",
+  "version": "0.2.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "alh101",
+    "uuid": "5010391b-8fa9-42ad-b6b0-c85741313722",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+	"capabilities": [ "health" ],	
+    "targetPlatforms": [
+      "basalt", "chalk"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": [
+		{
+			"characterRegex": "[0-9]|[A-Z]|-|[_:]| ",
+			"type": "font",
+			"name": "LECO_20",
+			"file": "LECO_1976-Regular.otf"
+		},
+		{
+			"characterRegex": "[0-9]|K| ",
+			"type": "font",
+			"name": "LECO_30",
+			"file": "LECO_1976-Regular.otf"
+		}
+	  ]
+    }
+  }
+}
